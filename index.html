@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="en"> <!-- Início do elemento HTML com atributo de linguagem definido como inglês -->
+<head>
+    <meta charset="UTF-8"> <!-- Declaração do conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag para definição da escala inicial e do viewport -->
+    <title>CRUD de Produtos</title> <!-- Título da página -->
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="container"> <!-- Início de uma div com classe container -->
+        <h1>CRUD de Produtos</h1> <!-- Título principal da página -->
+        
+        <!-- Campo para efetuar a busca por ID -->
+        <input type="text" id="searchProductId" placeholder="Buscar por ID">
+        <button type="button" id="searchButton" onclick="searchProduct()">Buscar</button>
+
+        <table> <!-- Início de uma tabela -->
+            <thead> <!-- Cabeçalho da tabela -->
+                <tr> <!-- Linha da tabela -->
+                    <th>ID</th> <!-- Cabeçalho da coluna ID -->
+                    <th>Nome</th> <!-- Cabeçalho da coluna Nome -->
+                    <th>Preço</th> <!-- Cabeçalho da coluna Preço -->
+                    <th>Quantidade</th> <!-- Cabeçalho da coluna Quantidade -->
+                    <th>Descrição</th> <!-- Cabeçalho da coluna Descrição -->
+                    <th>Ações</th> <!-- Cabeçalho da coluna Ações -->
+                </tr> <!-- Fim da linha da tabela -->
+            </thead> <!-- Fim do cabeçalho da tabela -->
+            <tbody id="productTableBody"> <!-- Corpo da tabela com identificador productTableBody -->
+                <!-- # IMPORTANTE # -->
+                <!-- Aqui serão adicionadas as linhas de produtos via JavaScript -->
+                <!-- # IMPORTANTE # -->
+            </tbody> <!-- Fim do corpo da tabela -->
+        </table> <!-- Fim da tabela -->
+        <h2>Adicionar/Editar Produto</h2> <!-- Título secundário -->
+        <form id="addProductForm"> <!-- Formulário para adicionar/editar produto com identificador addProductForm -->
+            <!-- Campo oculto para armazenar o ID do produto em edição -->
+            <input type="hidden" id="productId"> 
+            <!-- Campo de texto para o nome do produto -->
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            <!-- Campo de número para o preço do produto -->
+            <input type="number" id="productPrice" placeholder="Preço do Produto" step="0.01" required>
+            <!-- Campo de número para a quantidade do produto -->
+            <input type="number" id="productQuantity" placeholder="Quantidade do Produto" required>
+            <!-- Área de texto para a descrição do produto -->
+            <textarea id="productDescription" placeholder="Descrição do Produto" required></textarea>
+            <!-- Botão de envio do formulário para salvar o produto -->
+            <input type="submit" value="Salvar Produto">
+            <!-- Botão para limpar o formulário -->
+            <button type="button" onclick="clearForm()">Limpar Formulário</button>
+        </form> <!-- Fim do formulário -->
+    </div> <!-- Fim da div container -->
+
+    <script src="/script.js"></script> <!-- Link para o arquivo de script JavaScript -->
+</body> <!-- Fim do corpo do documento HTML -->
+
+</html> <!-- Fim do documento HTML -->

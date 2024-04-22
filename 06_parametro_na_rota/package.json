@@ -1,5 +1,5 @@
 {
-  "name": "03_render_html",
+  "name": "06_parametro_na_rota",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
 
   },
   "keywords": [],
-  "author": "Pyetra",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",

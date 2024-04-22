@@ -1,15 +1,15 @@
 {
-  "name": "03_render_html",
+  "name": "aplicativo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "db.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./index.js localhost 3000"
+    "start": "nodemon ./app.js localhost 3000"
 
   },
   "keywords": [],
-  "author": "Pyetra",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
